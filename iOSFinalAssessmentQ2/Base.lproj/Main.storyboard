@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSFinalAssessmentQ2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,60 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4n-Ia-enw">
+                                <rect key="frame" x="190" y="622" width="170" height="40"/>
+                                <color key="backgroundColor" red="0.40877288579940796" green="0.64883893728256226" blue="0.14354595541954041" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="wD0-4R-HOe"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTI-SY-O7c">
+                                <rect key="frame" x="185" y="632" width="5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="5" id="Trc-4B-MSi"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMZ-9B-31F">
+                                <rect key="frame" x="0.0" y="632" width="15" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="zZX-KB-inm"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqh-fI-EBa">
+                                <rect key="frame" x="360" y="632" width="15" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="G9x-tR-POv"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzh-A3-HgL">
+                                <rect key="frame" x="15" y="622" width="170" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.5026591420173645" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="p35-jc-JPx"/>
+                                </constraints>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="N4n-Ia-enw" firstAttribute="width" secondItem="Lzh-A3-HgL" secondAttribute="width" id="6by-ED-2yZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aTI-SY-O7c" secondAttribute="bottom" constant="5" id="7gZ-js-vLK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="N4n-Ia-enw" secondAttribute="bottom" constant="5" id="GaC-zp-x7g"/>
+                            <constraint firstItem="N4n-Ia-enw" firstAttribute="leading" secondItem="aTI-SY-O7c" secondAttribute="trailing" id="Lx4-f9-ALk"/>
+                            <constraint firstItem="aTI-SY-O7c" firstAttribute="leading" secondItem="Lzh-A3-HgL" secondAttribute="trailing" id="W5o-qw-Ohd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lzh-A3-HgL" secondAttribute="bottom" constant="5" id="alI-Fa-Miu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EMZ-9B-31F" secondAttribute="bottom" constant="5" id="bP4-ix-jLt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qqh-fI-EBa" secondAttribute="bottom" constant="5" id="ekR-UP-AtF"/>
+                            <constraint firstItem="EMZ-9B-31F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kgN-aW-37O"/>
+                            <constraint firstItem="qqh-fI-EBa" firstAttribute="leading" secondItem="N4n-Ia-enw" secondAttribute="trailing" id="m0K-zQ-as3"/>
+                            <constraint firstItem="Lzh-A3-HgL" firstAttribute="leading" secondItem="EMZ-9B-31F" secondAttribute="trailing" id="oQe-nf-55e"/>
+                            <constraint firstAttribute="trailing" secondItem="qqh-fI-EBa" secondAttribute="trailing" id="xcX-Qe-21v"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
