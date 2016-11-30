@@ -15,6 +15,10 @@
 
 利用課堂上教的，藉由安插隱形固定寬度的矩形，產生間隙不變，寬度會變的效果。
 
+![](https://github.com/dan12411/iOSFinalAssessmentQ2/blob/master/FinalAssQ2.gif)
+
 ---
 
 參考資料：
+
+之前上課的記憶
